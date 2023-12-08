@@ -1,0 +1,13 @@
+method: grid
+name: SPDM Frechet Mean
+parameters:
+  dim:
+    value: 4
+  n_points:
+    values: [5, 10000]
+  model:
+    values: ["spdm", "tangent_space"]
+  optimizer:
+    values: ["sgd", "adam"]
+program: spdm.py
+project: frechet-mean-opt

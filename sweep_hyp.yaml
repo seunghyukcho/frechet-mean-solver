@@ -1,0 +1,15 @@
+method: grid
+name: Hyperbolic Frechet Mean
+parameters:
+  lr:
+    value: 0.001
+  dim:
+    value: 10
+  n_points:
+    values: [5, 10000]
+  model:
+    values: ["poincare_disk", "tangent_space"]
+  optimizer:
+    values: ["sgd", "adam"]
+program: hyperbolic.py
+project: frechet-mean-opt
